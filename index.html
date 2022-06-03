@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="clashing.js" defer></script>
+<style>
+    #pickedColor, #badCube{
+
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        position: fixed;
+        z-index: -1;
+    }
+    #pickedColor {
+        left: 0;
+    }
+    #badCube {
+        left: 50vw;
+    }
+    #display, #badDisplay{
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+    #display, #badDisplay, h1 {
+        background-color: white;
+        width: max-content;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+    }
+</style>
+</head>
+<body>
+    <h1>
+        Clashing color generator
+    </h1>
+   
+
+    <div id="pickedColor"> <p id="display"></p></div>
+    <div id="badCube"><p id="badDisplay"></p></div>
+   
+    
+
+    <input type="color" id="colorPicker" >
+
+</body>
+</html>
